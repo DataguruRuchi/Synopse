@@ -18,7 +18,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "74a9af48-7659-4551-9ed9-dc661c53defc"
+				"spark.autotune.trackingId": "48b07ee5-4c83-4827-910f-f892fed6a09d"
 			}
 		},
 		"metadata": {
@@ -501,7 +501,100 @@
 					"# create a catalog table based on the streaming sink\r\n",
 					"spark.sql(\"CREATE TABLE IotDeviceData USING DELTA LOCATION '{0}'\".format(delta_stream_table_path))"
 				],
-				"execution_count": 19
+				"execution_count": 20
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "sparksql"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%sql\r\n",
+					"\r\n",
+					"SELECT * FROM IotDeviceData;"
+				],
+				"execution_count": 21
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Add more data to the source stream\r\n",
+					"more_data = '''{\"device\":\"Dev1\",\"status\":\"ok\"}\r\n",
+					"{\"device\":\"Dev1\",\"status\":\"ok\"}\r\n",
+					"{\"device\":\"Dev1\",\"status\":\"ok\"}\r\n",
+					"{\"device\":\"Dev1\",\"status\":\"ok\"}\r\n",
+					"{\"device\":\"Dev1\",\"status\":\"error\"}\r\n",
+					"{\"device\":\"Dev2\",\"status\":\"error\"}\r\n",
+					"{\"device\":\"Dev1\",\"status\":\"ok\"}'''\r\n",
+					"\r\n",
+					"mssparkutils.fs.put(inputPath + \"more-data.txt\", more_data, True)"
+				],
+				"execution_count": 22
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "sparksql"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%sql\r\n",
+					"\r\n",
+					"SELECT * FROM IotDeviceData;"
+				],
+				"execution_count": 23
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"deltastream.stop()"
+				],
+				"execution_count": 25
 			},
 			{
 				"cell_type": "code",
