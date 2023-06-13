@@ -18,236 +18,11 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "9d14c5f8-b466-4994-a429-f8fecf8a0dfa"
+				"spark.autotune.trackingId": "fa604c7e-84ae-4c3e-b0f8-163d1ebd3918"
 			}
 		},
 		"metadata": {
 			"saveOutput": true,
-			"synapse_widget": {
-				"version": "0.1",
-				"state": {
-					"046ee7ad-7718-4140-b22e-3d714381bb4b": {
-						"type": "Synapse.DataFrame",
-						"sync_state": {
-							"table": {
-								"rows": [
-									{
-										"0": "ProductID",
-										"1": "ProductName",
-										"2": "Category",
-										"3": "ListPrice"
-									},
-									{
-										"0": "771",
-										"1": "Mountain-100 Silver, 38",
-										"2": "Mountain Bikes",
-										"3": "3399.9900"
-									},
-									{
-										"0": "772",
-										"1": "Mountain-100 Silver, 42",
-										"2": "Mountain Bikes",
-										"3": "3399.9900"
-									},
-									{
-										"0": "773",
-										"1": "Mountain-100 Silver, 44",
-										"2": "Mountain Bikes",
-										"3": "3399.9900"
-									},
-									{
-										"0": "774",
-										"1": "Mountain-100 Silver, 48",
-										"2": "Mountain Bikes",
-										"3": "3399.9900"
-									},
-									{
-										"0": "775",
-										"1": "Mountain-100 Black, 38",
-										"2": "Mountain Bikes",
-										"3": "3374.9900"
-									},
-									{
-										"0": "776",
-										"1": "Mountain-100 Black, 42",
-										"2": "Mountain Bikes",
-										"3": "3374.9900"
-									},
-									{
-										"0": "777",
-										"1": "Mountain-100 Black, 44",
-										"2": "Mountain Bikes",
-										"3": "3374.9900"
-									},
-									{
-										"0": "778",
-										"1": "Mountain-100 Black, 48",
-										"2": "Mountain Bikes",
-										"3": "3374.9900"
-									},
-									{
-										"0": "779",
-										"1": "Mountain-200 Silver, 38",
-										"2": "Mountain Bikes",
-										"3": "2319.9900"
-									}
-								],
-								"schema": [
-									{
-										"key": "0",
-										"name": "_c0",
-										"type": "string"
-									},
-									{
-										"key": "1",
-										"name": "_c1",
-										"type": "string"
-									},
-									{
-										"key": "2",
-										"name": "_c2",
-										"type": "string"
-									},
-									{
-										"key": "3",
-										"name": "_c3",
-										"type": "string"
-									}
-								],
-								"truncated": false
-							},
-							"isSummary": false,
-							"language": "scala"
-						},
-						"persist_state": {
-							"view": {
-								"type": "details",
-								"chartOptions": {
-									"chartType": "bar",
-									"aggregationType": "count",
-									"categoryFieldKeys": [
-										"0"
-									],
-									"seriesFieldKeys": [
-										"0"
-									],
-									"isStacked": false
-								}
-							}
-						}
-					},
-					"ac6b76ad-dba9-4969-846d-7a796b2d52ec": {
-						"type": "Synapse.DataFrame",
-						"sync_state": {
-							"table": {
-								"rows": [
-									{
-										"0": "771",
-										"1": "Mountain-100 Silver, 38",
-										"2": "Mountain Bikes",
-										"3": "3399.9900"
-									},
-									{
-										"0": "772",
-										"1": "Mountain-100 Silver, 42",
-										"2": "Mountain Bikes",
-										"3": "3399.9900"
-									},
-									{
-										"0": "773",
-										"1": "Mountain-100 Silver, 44",
-										"2": "Mountain Bikes",
-										"3": "3399.9900"
-									},
-									{
-										"0": "774",
-										"1": "Mountain-100 Silver, 48",
-										"2": "Mountain Bikes",
-										"3": "3399.9900"
-									},
-									{
-										"0": "775",
-										"1": "Mountain-100 Black, 38",
-										"2": "Mountain Bikes",
-										"3": "3374.9900"
-									},
-									{
-										"0": "776",
-										"1": "Mountain-100 Black, 42",
-										"2": "Mountain Bikes",
-										"3": "3374.9900"
-									},
-									{
-										"0": "777",
-										"1": "Mountain-100 Black, 44",
-										"2": "Mountain Bikes",
-										"3": "3374.9900"
-									},
-									{
-										"0": "778",
-										"1": "Mountain-100 Black, 48",
-										"2": "Mountain Bikes",
-										"3": "3374.9900"
-									},
-									{
-										"0": "779",
-										"1": "Mountain-200 Silver, 38",
-										"2": "Mountain Bikes",
-										"3": "2319.9900"
-									},
-									{
-										"0": "780",
-										"1": "Mountain-200 Silver, 42",
-										"2": "Mountain Bikes",
-										"3": "2319.9900"
-									}
-								],
-								"schema": [
-									{
-										"key": "0",
-										"name": "ProductID",
-										"type": "string"
-									},
-									{
-										"key": "1",
-										"name": "ProductName",
-										"type": "string"
-									},
-									{
-										"key": "2",
-										"name": "Category",
-										"type": "string"
-									},
-									{
-										"key": "3",
-										"name": "ListPrice",
-										"type": "string"
-									}
-								],
-								"truncated": false
-							},
-							"isSummary": false,
-							"language": "scala"
-						},
-						"persist_state": {
-							"view": {
-								"type": "details",
-								"chartOptions": {
-									"chartType": "bar",
-									"aggregationType": "count",
-									"categoryFieldKeys": [
-										"0"
-									],
-									"seriesFieldKeys": [
-										"0"
-									],
-									"isStacked": false
-								}
-							}
-						}
-					}
-				}
-			},
 			"enableDebugMode": false,
 			"kernelspec": {
 				"name": "synapse_pyspark",
@@ -263,14 +38,13 @@
 				"endpoint": "https://synapse3hb81wr.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/spark3hb81wr",
 				"auth": {
 					"type": "AAD",
-					"authResource": "https://dev.azuresynapse.net",
-					"authHeader": null
+					"authResource": "https://dev.azuresynapse.net"
 				},
 				"sparkVersion": "3.1",
 				"nodeCount": 3,
 				"cores": 4,
 				"memory": 28,
-				"extraHeader": null
+				"automaticScaleJobs": false
 			},
 			"sessionKeepAliveTimeout": 30
 		},
@@ -338,6 +112,74 @@
 					"df.write.format(\"delta\").save(delta_table_path)"
 				],
 				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from delta.tables import *\r\n",
+					"from pyspark.sql.functions import *\r\n",
+					"\r\n",
+					"# Create a deltaTable object\r\n",
+					"deltaTable = DeltaTable.forPath(spark, delta_table_path)\r\n",
+					"\r\n",
+					"# Update the table (reduce price of product 771 by 10%)\r\n",
+					"deltaTable.update(\r\n",
+					"    condition = \"ProductID == 771\",\r\n",
+					"    set = { \"ListPrice\": \"ListPrice * 0.9\" })\r\n",
+					"\r\n",
+					"# View the updated data as a dataframe\r\n",
+					"deltaTable.toDF().show(10)"
+				],
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"new_df = spark.read.format(\"delta\").load(delta_table_path)\r\n",
+					"new_df.show(10)"
+				],
+				"execution_count": 5
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"new_df = spark.read.format(\"delta\").option(\"versionAsOf\", 0).load(delta_table_path)\r\n",
+					"new_df.show(10)"
+				],
+				"execution_count": 6
 			}
 		]
 	}
